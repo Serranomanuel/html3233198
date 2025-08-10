@@ -6,21 +6,57 @@
     <title>Formulario</title>
 </head>
 <body>
-    <table>
-        <form>
-            <tr>
-                <td><label for="">Nombre</label></td>
-                <td><input type="text" required></td>
-            </tr>
-            <tr>
-                <td><label for="">Email</label></td>
-                <td><input type="email" minlength="10"></td>
-            </tr>
-            <tr>
-                <td><label for="">Telefono</label></td>
-                <td><input type="number" maxlength="10"></td>
-            </tr>
-        </form>
-    </table>
+    <main>    
+        <table>
+            <form>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                        <tr>
+                            <td><label for="">Nombre</label></td>
+                            <td><input type="text" name="Nombre" id="Nombre" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Apellidos</label></td>
+                            <td><input type="text" name="Apellidos" id="Apellidos"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="">Email</label></td>
+                            <td><input type="email" minlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Telefono</label></td>
+                            <td><input type="number" maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Fecha de nacimiento</label></td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ciudad">Seleccione ciudad</label></td>
+                            <td><select name="ciuda" id="ciuda">
+                                <option value="1">Bucaramanga</option>
+                                <option value="2">Piedecuesta</option>
+                                <option value="3">Giron</option>
+                                <option value="4">Floridablanca</option>
+                                <option value="5">Lebrija</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="imagen">Imagen</label></td>
+                            <td><input type="file"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Direccion</label></td>
+                            <td><input type="" maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td><button>Guardar</button></td>
+                        </tr>
+                </fieldset>
+            </form>
+        </table>
+    </main>
+
 </body>
 </html>
